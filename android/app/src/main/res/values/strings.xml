@@ -1,0 +1,4 @@
+<resources>
+    <string name="access_snap">access_snap</string>
+    <string name="accessibility_service_description">This service reads text from the YouTube app to log it.</string>
+</resources>

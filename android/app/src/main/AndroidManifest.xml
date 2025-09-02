@@ -7,11 +7,23 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
+    <!-- Add this block to declare package visibility -->
+    <queries>
+        <package android:name="com.instagram.android" />
+    </queries>
+
     <application
         android:name="${applicationName}"
         android:label="access_snap"
         android:icon="@mipmap/ic_launcher"
-        android:usesCleartextTraffic="true">
+        android:roundIcon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:theme="@style/LaunchTheme">
+
+        <!-- Add this meta-data if it doesn't exist -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
 
         <!-- Flutter entry point -->
         <activity
